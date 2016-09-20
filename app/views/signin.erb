@@ -1,0 +1,16 @@
+<h1>Sign In</h1>
+
+<% if @errors %>
+  <p><%= @errors %></p>
+<% end %>
+<div id="form">
+  <form name="user" action="/sign_in" method="POST">     
+    <label for="user_email">Email:</label>
+    <input id="user_email" type="text" name="user[email]">
+    <br><br>
+    <label for="user_password">Password:</label>
+    <input id="user_password" type="password" name="user[password]">
+    <br><br>
+    <input type="submit" value="Signin" id="submit">
+  </form>
+</div> <!--end "login_form" div -->

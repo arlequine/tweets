@@ -1,0 +1,12 @@
+<h1>Autentica tu cuenta!</h1>	
+
+
+<% if @errors %>
+  <p><%= @errors %></p>
+<% end %> 
+
+<div id="form">
+  <form id="que" name="user" action="/sign_in" method="POST">     
+    <input type="submit" value="GO!" id="submit">
+  </form>
+</div>

@@ -1,0 +1,8 @@
+<% if @errors %>
+  <p><%= @errors %></p>
+<% end %> 
+
+<% if @tweet %>
+  <p>Your tweet was succesfull..</p>
+  <p><%= @tweet.text %></p>
+<% end %>

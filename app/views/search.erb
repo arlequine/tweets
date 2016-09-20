@@ -1,0 +1,27 @@
+<% if @errors %>
+  <p><%= @errors %></p>
+<% end %> 
+
+<div id="form">
+  <form id="que" name="user" action="/search_tweet" method="POST">     
+    <label for="question_title">Write here your tweet search:</label>
+    <input id="search" type="text" name="tweet">
+    <br><br>
+    <input type="submit" value="Search" id="submit">
+  </form>
+</div>
+
+<div id="form_tweets">
+	 <br><br>
+  <form id="que_tweet" name="user" action="/tweet" method="POST">     
+    <label for="question_title">Write here your tweet:</label>
+    <input id="search" type="text" name="tweet_text">
+    <br><br>
+    <input type="submit" value="Tweet" id="submit">
+  </form>
+</div>
+
+
+<div id="show_tweets">
+
+</div>
